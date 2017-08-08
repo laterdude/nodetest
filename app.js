@@ -2,7 +2,7 @@ var express = require('express')
 var app = express()
 
 app.get('/dev', function(req, res) {
-	res.send('Hello from github auto-deploy')
+	res.send('Hello from github auto-deploy, retry')
 })
 
 app.listen(5678)
