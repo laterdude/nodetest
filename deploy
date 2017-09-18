@@ -1,10 +1,11 @@
 #!/bin/sh      
-#ssh userName@development-server-ip <<EOF        
-cd /home/useradmin/apps/nodetest/
-git pull origin master       
-#npm install --production       
-yarn install --production=true
-pm2 stop all
-pm2 start app
-exit       
+
+ssh useradmin@165.227.63.240 <<EOF        
+	cd ~/apps/nodetest
+	git pull origin master       
+	#npm install --production       
+	yarn install --production=true
+	pm2 stop app
+	pm2 start app
+	exit       
 EOF
