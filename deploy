@@ -1,11 +1,11 @@
 #!/bin/sh      
-
 ssh useradmin@165.227.63.240 <<EOF        
 	cd ~/apps/nodetest
+	#sudo chown -R useradmin .
 	git pull origin master       
 	#npm install --production       
 	yarn install --production=true
 	pm2 stop app
-	pm2 start app
+	pm2 start app.js
 	exit       
 EOF
