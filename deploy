@@ -1,4 +1,4 @@
--#!/bin/sh      
+#!/bin/sh      
 #ssh userName@development-server-ip <<EOF        
 cd ~/nodetest  
  git pull origin master       
