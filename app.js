@@ -6,7 +6,7 @@ app.get('/dev', function(req, res) {
 })
 
 app.listen(5678)
-console.log('Server running at http://localhost:5678/');
+console.log('Server running at http://localhost:5678/, git scm polling is operational');
 // var http = require('http');
 // http.createServer(function (req, res) {
 //   res.writeHead(200, {'Content-Type': 'text/plain'});
